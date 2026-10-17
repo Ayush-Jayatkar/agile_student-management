@@ -4,7 +4,7 @@
 
 ## Project overview and run
 
-CampusDesk is a responsive student management website and REST API. Use the sidebar to explore **Overview**, **Students**, **Agile Plan**, **CI/CD Pipeline**, and **Unit 3 & 4**. Add, view, search, edit, and delete student records. Student data is held in memory, so it resets when the server restarts. Java 17 and Maven are used.
+CampusDesk is a responsive student management website and REST API. Use the sidebar to explore **Overview**, **Students**, **Agile Plan**, **CI/CD Pipeline**, and **Environments**. Add, view, search, edit, and delete student records. Student data is held in memory, so it resets when the server restarts. Java 17 and Maven are used.
 
 Run the application from the project folder:
 
@@ -87,33 +87,4 @@ These sample figures show how a team could report progress; update them with act
 
 Use a GitHub Projects board as the Agile dashboard. Move work through **To Do**, **In Progress**, and **Done** to make progress visible to the team.
 
-The in-app **Agile Plan** page presents the five stories, sprint assignments, DoD, acceptance criteria, and example metrics. The in-app **Unit 3 & 4** page explains how the implementation maps to course topics. The GitHub Projects board is a suggested external team board; it is not connected to this application.
-
-## 1–2 minute video walkthrough
-
-Use your group’s own narration; the notice does not allow AI-generated voice. A simple recording sequence:
-
-1. **0:00–0:15 — Introduce the project.** Say this is CampusDesk, a student management system created for FA2. Open Overview and mention the project workspace and summary cards.
-2. **0:15–0:40 — Demonstrate the app.** Click **Load sample students**, open Students, search for “Asha”, edit a record, add a new student, and point out duplicate roll numbers are rejected. Delete a record if time allows.
-3. **0:40–1:00 — Explain Agile planning.** Open Agile Plan. Point to the five user stories, Sprint 1 / Sprint 2, Definition of Done, and Given/When/Then cases including the duplicate roll number.
-4. **1:00–1:25 — Explain Unit 3 pipeline.** Open CI/CD Pipeline and describe the order: GitHub checkout, Java/Maven build, JUnit testing and JaCoCo coverage, Checkstyle, JAR package, Docker image. If the code is pushed, show the GitHub repository’s **Actions** tab and open a successful run to show logs and artifacts.
-5. **1:25–1:40 — Connect Unit 3 and Unit 4.** Open Unit 3 & 4 and briefly point to automation/quality/coverage/Docker (Unit 3) and sprint delivery/DoD/criteria/metrics/environments (Unit 4). State clearly that cloud deployment is a future step; this pipeline builds a Docker image but does not deploy it.
-
-Record your own voices, keep the full video between 1 and 2 minutes, and submit it to Google Classroom. Replace the README badge’s `YOUR-USERNAME` with your GitHub username after the repository is created.
-
-## Unit 3 and Unit 4 in this project
-
-| Topic | Where it appears |
-|---|---|
-| TDD | Service and controller tests define expected behavior. |
-| Continuous testing | The workflow runs tests with Maven `verify`. |
-| CI | GitHub Actions starts on pushes to `main` and pull requests. |
-| Static analysis | Checkstyle checks Java style using Google checks. |
-| Coverage | JaCoCo creates `target/site/jacoco` and the workflow uploads it. |
-| CD | The workflow packages the application and builds a Docker image. |
-| Docker | The `Dockerfile` packages the app on a Java 17 runtime. |
-| Definition of Done | The checklist above defines when work is complete. |
-| Acceptance criteria | Given/When/Then examples cover adding and duplicate students. |
-| Metrics | The example table shows sprint points, velocity, defects, and time. |
-| Dashboards | GitHub Projects tracks work in To Do, In Progress, and Done. |
-| Environments | Dev, test, and production are described above. |
+The in-app **Agile Plan** page presents the five stories, sprint assignments, Definition of Done, acceptance criteria, and example metrics. The GitHub Projects board is a suggested external team board; it is not connected to this application.
